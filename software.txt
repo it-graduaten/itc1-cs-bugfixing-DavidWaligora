@@ -1,0 +1,6 @@
+﻿software;Photoshop elements;99.99
+software;Microsoft office 2019;23.99
+software;Norton antivirus 360 Deluxe;13.99
+game;Baldur's gate 3;59.99;1;8
+game;God of war;24.99;1;4
+game;Age of empires IV;39.99;4;4

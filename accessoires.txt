@@ -1,0 +1,9 @@
+﻿muis;Trust;Carve;false;7.99;false;1;1200
+muis;Logitech;M705;true;34.99;false;1;900
+muis;Steelseries;Rival 600;false;61.20;true;5;12000
+muis;Razer;DeathAdder V2;false;62.99;true;5;20000
+muis;Corsair;Nightsword;false;84.90;true;5;18000
+toetsenbord;Steelseries;Apex 3 TKL;false;39.99;true;QWERTY;false
+toetsenbord;Fuegobird;K3;true;40.50;true;QWERTY;true
+toetsenbord;Razer;Huntsman mini;false;119.95;true;QWERTY;false
+toetsenbord;Corsair;K55 RGB Pro;false;64.90;true;QWERTY;false

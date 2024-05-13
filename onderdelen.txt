@@ -1,0 +1,17 @@
+﻿geheugen;DDR4;16;400
+geheugen;DDR4;8;450.50
+geheugen;DDR5;16;1400
+moederbord;AM4;AMD B550;ATX;DDR4;145
+moederbord;AM7;AMD B550;ATX;DDR4;980
+moederbord;AM9;AMD B550;ATX;DDR5;456
+moederbord;AM3;AMD B550;ATX;DDR5;355
+processor;AMD;AM4;8;12;3.4;435
+processor;AMD;AM5;8;12;3.4;347
+processor;AMD;AM5;8;12;3.8;435
+processor;AMD;AM5;-1;16;5.0;452
+processor;AMD;AM5;8;12;3.4;123
+processor;AMD;AM7;8;12;3.4;453
+processor;AMD;AM7;4;12;4.0;809
+processor;AMD;AM7;8;8;3.8;345
+grafischeKaart;NVIDIA GeForce GTX 1650;4;179.99
+grafischeKaart;Gigabyte GeForce RTX 4080;16;1399
