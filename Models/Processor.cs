@@ -52,11 +52,11 @@ namespace ComputerWinkel.Models
 
         public Processor(string merk, string socket, int aantalCores, int aantalThreads, double klokFrequentie, double prijs) : base(prijs)
         {
-            _merk = merk;
-            _socket = socket;
-            _aantalCores = aantalCores;
-            _aantalThreads = aantalThreads;
-            _klokFrequentie = klokFrequentie;
+            Merk = merk;
+            Socket = socket;
+            AantalCores = aantalCores;
+            AantalThreads = aantalThreads;
+            KlokFrequentie = klokFrequentie;
         }
 
         public override string ToString()

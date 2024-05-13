@@ -34,6 +34,7 @@ namespace ComputerWinkel.Models
         public Aankoop()
         {
             Accessoires = new List<Accessoire>();
+            Software = new List<Software>();
         }
 
         public void VoegAccessoireToe(Accessoire accessoire)
@@ -46,17 +47,17 @@ namespace ComputerWinkel.Models
 
         public void VoegSoftwareToe(Software software)
         {
-            if (software == null)
-                return;
+            if (software != null)
+                Software.Add(software);
 
-            Software.Add(software);
+            
         }
 
         public double BerekenTotalePrijs()
         {
             double totalePrijs = Pc.TotaalPrijs();
-            Accessoires.ForEach(a => totalePrijs = a.Prijs);
-            Software.ForEach(s => totalePrijs = s.Prijs);
+            Accessoires.ForEach(a => totalePrijs += a.Prijs);
+            Software.ForEach(s => totalePrijs += s.Prijs);
             return totalePrijs;
         }
     }

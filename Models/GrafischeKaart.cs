@@ -20,7 +20,7 @@ namespace ComputerWinkel.Models
         public int Werkgeheugen
         {
             get { return _werkgeheugen; }
-            set { value = _werkgeheugen; }
+            set { _werkgeheugen = value; }
         }
 
         public GrafischeKaart(string chipset, int werkgeheugen, double prijs) : base(prijs)

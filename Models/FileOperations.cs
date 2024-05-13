@@ -135,8 +135,6 @@ namespace ComputerWinkel.Models
                 while (!reader.EndOfStream)
                 {
                     string[] accessoireGegevens = reader.ReadLine().Split(';');
-                    accessoireGegevens = reader.ReadLine().Split(';');
-                    Accessoire accessoire = null;
 
                     string accessoireType = accessoireGegevens[0];
 
@@ -145,13 +143,13 @@ namespace ComputerWinkel.Models
                     bool isDraadloos = bool.Parse(accessoireGegevens[3]);
                     double prijs = double.Parse(accessoireGegevens[4]);
                     bool heeftRgbverlichting = bool.Parse(accessoireGegevens[5]);
-
+                    Accessoire accessoire = null;
                     switch (accessoireType)
                     {
                         case "muis":
                             int aantalInstellingen = int.Parse(accessoireGegevens[6]);
                             int maxDpi = int.Parse(accessoireGegevens[7]);
-                            string watDoetDitHier = accessoireGegevens[8];
+                            //string watDoetDitHier = accessoireGegevens[8];
 
                             accessoire = new Muis(merk, model, isDraadloos, heeftRgbverlichting, prijs, aantalInstellingen, maxDpi);
                             break;

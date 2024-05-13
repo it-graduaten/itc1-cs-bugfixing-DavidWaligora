@@ -20,7 +20,7 @@ namespace ComputerWinkel.Models
         public int ModuleGrootte
         {
             get { return _moduleGrootte; }
-            set { _moduleGrootte = ModuleGrootte; }
+            set { _moduleGrootte = value; }
         }
 
         public Geheugen(string type, int moduleGrootte, double prijs) : base(prijs)

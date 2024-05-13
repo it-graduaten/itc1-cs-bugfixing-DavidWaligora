@@ -26,7 +26,7 @@ namespace ComputerWinkel.Models
 
         public Software(string naam, double prijs)
         {
-            naam = Naam;
+            Naam = naam;
             Prijs = prijs;
         }
 

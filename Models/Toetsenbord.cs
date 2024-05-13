@@ -24,7 +24,7 @@ namespace ComputerWinkel.Models
         }
 
         public Toetsenbord(string merk, string model, bool isDraadloos, bool heeftRgbverlichting, double prijs, string layout, bool isMechanisch)
-            : base(merk, model, isDraadloos, prijs, heeftRgbverlichting)
+            : base(merk, model, isDraadloos, heeftRgbverlichting, prijs)
         {
             Layout = layout;
             IsMechanisch = isMechanisch;
@@ -33,7 +33,7 @@ namespace ComputerWinkel.Models
         public override string ToString()
         {
             string mechanisch = IsMechanisch ? "Ja" : "Nee";
-            return $"Toetsenbord: {base.ToString()} - Layout {Layout} - Mechanisch {mechanisch}";
+            return $"Toetsenbord: {base.ToString()} - Prijs {Prijs} - Layout {Layout} - Mechanisch {mechanisch}";
         }
     }
 }

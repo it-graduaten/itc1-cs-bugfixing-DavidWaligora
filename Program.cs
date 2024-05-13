@@ -1,7 +1,7 @@
 ﻿//Hoofdprogramma
-ToonTitle("PC Samenstellen");
+ToonTitel("PC Samenstellen");
 
-Aankoop aankoop = null;
+Aankoop aankoop = new Aankoop();
 aankoop.Pc = new Pc();
 
 while (!aankoop.Pc.PcIsCompleet())
@@ -36,6 +36,7 @@ while (optieMuis.ToLower() == "ja")
     aankoop.VoegAccessoireToe(muis);
 
     Console.WriteLine();
+    optieMuis = KeuzeOptie("muis");
 }
 
 Console.WriteLine();
@@ -113,9 +114,9 @@ void ToonOverzichtSoftwareMetPrijs()
 
 Moederbord KiesMoederbord()
 {
-    ToonKeuzeTitel("processor");
+    ToonKeuzeTitel("Moederbord");
 
-    List<Moederbord> moederborden = FileOperations.FilterProcessoren();
+    List<Moederbord> moederborden = FileOperations.FilterMoederborden();
 
     for (int i = 0; i < moederborden.Count; i++)
         Console.WriteLine($"{i + 1}. {moederborden[i]}");
@@ -213,7 +214,7 @@ Software KiesSoftware()
     List<Software> softwareLijst = FileOperations.LeesSoftware();
 
     for (int i = 0; i < softwareLijst.Count; i++)
-        Console.WriteLine($"{i + 1}. {softwareLijst[i + 1]}");
+        Console.WriteLine($"{i + 1}. {softwareLijst[i]}");
 
     Console.WriteLine();
 

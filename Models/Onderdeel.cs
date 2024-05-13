@@ -12,7 +12,7 @@ namespace ComputerWinkel.Models
 
         public double Prijs
         {
-            get { return Prijs; }
+            get { return _prijs; }
             set { _prijs = value; }
         }
 

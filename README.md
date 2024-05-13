@@ -2,15 +2,33 @@
 Deze applicatie bevat de startcode voor een opdracht onder het OPO IT Challenges 1.
 
 ## Studenten
-- John Doe (r0987654)
-- Jef Doe (r0987653)
+- David Waligora (r0989841)
+- Jander Alenteyns (r100150)
 
 ## Opgeloste fouten
 Maak hier een lijst van de fouten die je opgelost hebt. Noteer bij elke fout het bestand en de regelnummer (ongeveer is goed) waar je een aanpassing hebt gedaan. 
 Bijvoorbeeld `Program.cs:20` (Het woord opgove aangepast naar opgave)
 
 0. Program.cs:20 - Het woord opgove aangepast naar opgave
-
+2. Program.cs:ToonTitle("PC Samenstellen"); veranderd in ToonTitel("PC Samenstellen");
+118. Program.cs:List<Moederbord> moederborden = FileOperations.FilterProcessoren(); naar List<Moederbord> moederborden = FileOperations.FilterMoederborden();
+26. Program.cs:heeftRgbverlichting, prijs veranderd van plaats
+4. Program.cs:Aankoop aankoop = new Aankoop(); verandering van null naar new Aankoop();
+15. Onderdeel: get { return _prijs; } aanpassing van Prijs naar _prijs
+55. Merk = merk; Socket = socket; AantalCores = aantalCores; AantalThreads = aantalThreads; KlokFrequentie = klokFrequentie; hoofdletter switch
+23. geheugen: set { _moduleGrootte = ModuleGrootte; } ModuleGrootte naar value;
+23. grafische kaart: set { value = _werkgeheugen; } omwisseling value met werkgeheugen.
+154. fileoperations://string watDoetDitHier = accessoireGegevens[8];
+138. fileoperations: lijn weg
+146. fileoperations: Accessoire accessoire = null; toevoeging
+39. program.cs: optieMuis = KeuzeOptie("muis");
+40. accesoires: if (value < 0) aanpassing groter dan naar kleiner dan
+36. toetsenbord: return $"Toetsenbord: {base.ToString()} - Prijs {Prijs} - Layout {Layout} - Mechanisch {mechanisch}"; prijs toegevoegd.
+217. program.cs: Console.WriteLine($"{i + 1}. {softwareLijst[i]}"); +1 weggehaald.
+29. software: Naam = naam; aanpassing switchen van beiden.
+37. aankoop:             Software = new List<Software>(); toegevoegd
+59. aankoop: Accessoires.ForEach(a => totalePrijs += a.Prijs); Software.ForEach(s => totalePrijs += s.Prijs); + toegevoegd.
+117. program.cs     ToonKeuzeTitel("Moederbord"); aanpassing titel
 
 ## Screenshots
 Het overzicht van de **moederborden** moet er als volgt uit zien:

@@ -37,7 +37,7 @@ namespace ComputerWinkel.Models
             get { return _prijs; }
             set
             {
-                if (value > 0)
+                if (value < 0)
                     _prijs = 0;
                 else
                     _prijs = value;
@@ -58,6 +58,8 @@ namespace ComputerWinkel.Models
             HeeftRgbverlichting = heeftRgbVerlichting;
             Prijs = prijs;
         }
+
+
 
         public override string ToString()
         {
